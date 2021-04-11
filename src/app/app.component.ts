@@ -5,6 +5,7 @@ import { Component, OnInit } from '@angular/core'
   templateUrl: 'app.component.html',
 })
 export class AppComponent implements OnInit {
+  title = 'Urban Metro Railway Official';
   constructor() {
     // Use the component constructor to inject providers.
   }

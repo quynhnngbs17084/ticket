@@ -1,15 +1,18 @@
 import { Component, OnInit } from '@angular/core'
 
 @Component({
-  selector: 'Browse',
-  templateUrl: './browse.component.html',
+  selector: 'About',
+  templateUrl: './about.component.html',
 })
-export class BrowseComponent implements OnInit {
+export class AboutComponent implements OnInit {
   constructor() {
-    // Use the component constructor to inject providers.
+    // Use the constructor to inject services.
   }
 
   ngOnInit(): void {
     // Use the "ngOnInit" handler to initialize data for the view.
+
   }
+
+
 }

@@ -3,20 +3,24 @@ import { HttpClientModule } from '@angular/common/http'
 import { NgModule, NO_ERRORS_SCHEMA } from '@angular/core'
 import { NativeScriptCommonModule, NativeScriptFormsModule, NativeScriptHttpClientModule } from '@nativescript/angular'
 
-import { HomeRoutingModule } from './home-routing.module'
-import { HomeComponent } from './home.component'
+import { LoginRoutingModule } from './login-routing.module'
+import { LoginComponent } from './login.component'
 
 @NgModule({
   imports: [
     NativeScriptCommonModule,
-    HomeRoutingModule,
+    LoginRoutingModule,
     HttpClientModule,
     NativeScriptFormsModule,
     NativeScriptHttpClientModule,
-    CommonModule
+    CommonModule,
+    NativeScriptCommonModule,
+    HttpClientModule,
+    NativeScriptFormsModule,
+    NativeScriptHttpClientModule
 
   ],
-  declarations: [HomeComponent],
+  declarations: [ LoginComponent],
   schemas: [NO_ERRORS_SCHEMA],
 })
-export class HomeModule {}
+export class LoginModule {}

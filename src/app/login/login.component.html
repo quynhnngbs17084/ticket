@@ -1,0 +1,13 @@
+<ActionBar title="Login"></ActionBar>
+<FlexboxLayout>
+    <StackLayout >
+        <TextField #emailInput hint="Email Address" keyboardType="email" autocorrect="false" autocapitalizationType="none">
+        </TextField>
+        <TextField #pwInput hint="Password" secure="true"></TextField>
+
+
+        <Button class="-primary " text="Login"  (tap)="onLoginButtonTap(emailInput.text, pwInput.text)"></Button>
+        <Button class="-primary " text="Register"></Button>
+    </StackLayout>
+
+</FlexboxLayout>

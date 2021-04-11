@@ -2,12 +2,16 @@
   <Label text="Home"></Label>
 </ActionBar>
 
-<GridLayout>
-  <ListView [items]="items">
-    <ng-template let-item="item">
-      <StackLayout [nsRouterLink]="['../item', item.id]">
-        <Label [text]="item.name"></Label>
-      </StackLayout>
-    </ng-template>
-  </ListView>
+<GridLayout rows="auto,auto,*,auto" columns="auto">
+
+  <GridLayout #navStatusBar class="navStatusBar">
+    <Button class="-primary" nsRouterLink='../login'>
+      <FormattedString>
+        <Span text="&#xf4ff;" class="far"></Span>
+        <Span text=" Login "></Span>
+      </FormattedString>
+    </Button>
+  </GridLayout>
+
 </GridLayout>
+
